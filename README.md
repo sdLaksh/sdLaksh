@@ -6,16 +6,13 @@ Welcome to my GitHub profile! I'm a passionate developer working with modern tec
 
 <div align="center">
 
-📈 **Comprehensive GitHub activity tracking in progress...**
+![Profile Details](./profile-summary-card-output/github_dark/0-profile-details.svg)
 
-*Statistics cards will appear here once the backup repository visibility is configured.*
+![Repository Language Stats](./profile-summary-card-output/github_dark/1-repos-per-language.svg)
+![Commit Language Stats](./profile-summary-card-output/github_dark/2-most-commit-language.svg)
 
-**Features being tracked:**
-- Profile details and contribution summary
-- Repository language distribution
-- Commit activity by programming language
-- Overall GitHub statistics and metrics
-- Productivity time analysis
+![GitHub Stats](./profile-summary-card-output/github_dark/3-stats.svg)
+![Productive Time](./profile-summary-card-output/github_dark/4-productive-time.svg)
 
 </div>
 

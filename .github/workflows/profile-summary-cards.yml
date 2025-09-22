@@ -1,0 +1,41 @@
+name: GitHub Profile Summary Cards
+
+on:
+  schedule:
+    # Run daily at 2 AM UTC to capture latest activity
+    - cron: "0 2 * * *"
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  generate-cards:
+    runs-on: ubuntu-latest
+    name: Generate profile summary cards for public display
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate Summary Cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Add generation metadata
+        run: |
+          echo "Generated on: $(date -u)" > profile-summary-card-output/generation-timestamp.txt
+          echo "Account: ${{ github.actor }}" >> profile-summary-card-output/generation-timestamp.txt
+          echo "Repository: ${{ github.repository }}" >> profile-summary-card-output/generation-timestamp.txt
+          echo "Purpose: Public profile display" >> profile-summary-card-output/generation-timestamp.txt
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add profile-summary-card-output/
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Update profile summary cards - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+            git push
+          else
+            echo "No changes to commit"
+          fi
