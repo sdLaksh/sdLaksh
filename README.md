@@ -27,7 +27,7 @@ Welcome to my GitHub profile! I'm a passionate developer working with modern tec
 
 ## 🔗 Connect with me
 
-- 💼 LinkedIn: [Lakshaya Sood](https://linkedin.com/in/lakshaya-sood)
+- 💼 LinkedIn: [Lakshaya Sood](https://www.linkedin.com/in/lakshaya-s-12111983/)
 - 📧 Email: lakshaya.sood@alyne.com
 - 🌐 Portfolio: [Coming Soon]
 
