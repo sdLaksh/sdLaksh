@@ -16,14 +16,14 @@ Welcome to my GitHub profile! I'm a passionate developer working with modern tec
 
 </div>
 
-## 🛠️ Technologies & Tools
+## 🛠️ Technologies & Tools [TBD]
 
-- **Languages**: JavaScript, TypeScript, Python, Java
+- **Languages**: JavaScript, TypeScript, Python, Go
 - **Frontend**: React, Vue.js, HTML5, CSS3
-- **Backend**: Node.js, Express, Spring Boot
-- **Databases**: MongoDB, PostgreSQL, MySQL
-- **Cloud**: AWS, Docker, Kubernetes
-- **Tools**: Git, VS Code, IntelliJ IDEA
+- **Backend**: Node.js, Express
+- **Databases**: MongoDB, PostgreSQL
+- **Cloud**: AWS, Docker
+- **Tools**: Git, VS Code
 
 ## 🔗 Connect with me
 
